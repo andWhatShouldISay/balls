@@ -373,7 +373,7 @@ bool isblue(int r,int g,int b)
     double s=sat(r,g,b);
     int v=max(r,max(g,b));
 
-    return (160 <= h && h <= 270) && s>=0.7 && v>=100;
+    return (180 <= h && h <= 270) && s>=0.7 && v>=100;
 }
 
 bool isbrown(int r,int g,int b)
@@ -1042,6 +1042,10 @@ void work(_rgb)
                         {
                             blackcnt.insert({y1,x1});
                         }
+                        if (isgreen_ball(Rsrc[y1][x1],Gsrc[y1][x1],Bsrc[y1][x1],avb))
+                        {
+                            greencnt.insert({y1,x1});
+                        }
                         if (isblue(Rsrc[y1][x1],Gsrc[y1][x1],Bsrc[y1][x1]))
                         {
                             bluecnt.insert({y1,x1});
@@ -1049,10 +1053,6 @@ void work(_rgb)
                         if (isred(Rsrc[y1][x1],Gsrc[y1][x1],Bsrc[y1][x1]))
                         {
                             redcnt.insert({y1,x1});
-                        }
-                        if (isgreen_ball(Rsrc[y1][x1],Gsrc[y1][x1],Bsrc[y1][x1],avb))
-                        {
-                            greencnt.insert({y1,x1});
                         }
                     }
 
@@ -1066,9 +1066,9 @@ void work(_rgb)
                         ball(c[0],128,83,38,T,circles);
                         break;
                     }
-                    else if (bluecnt.size()>=0.6*cnt.size())
+                    else if (greencnt.size()>=0.6*cnt.size())
                     {
-                        ball(c[0],0,0,255,T,circles);
+                        ball(c[0],0,255,63,T,circles);
                         break;
                     }
                     else if (redcnt.size()>=0.6*cnt.size())
@@ -1076,9 +1076,9 @@ void work(_rgb)
                         ball(c[0],255,0,0,T,circles);
                         break;
                     }
-                    else if (greencnt.size()>=0.6*cnt.size())
+                    else if (bluecnt.size()>=0.6*cnt.size())
                     {
-                        ball(c[0],0,255,63,T,circles);
+                        ball(c[0],0,0,255,T,circles);
                         break;
                     }
                 }
