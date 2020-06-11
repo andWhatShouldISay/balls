@@ -1174,7 +1174,18 @@ void display_table()
 
         double Y=T.realY(y,x,table_width,table_height);
         double X=T.realX(y,x,table_width);
+        
+        if (X<=4*R || X+4*R >= table_width)
+        {
+            c.r=0;
+            continue;
+        }
 
+        if (Y<=4*R || Y+4*R >= table_height){
+            c.r=0;
+            continue;
+        }
+        
         glVertex2i(X,Y);
         for (int i=0;i<=p;i++){
             double ang=i*2*pi/p;
