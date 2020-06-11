@@ -313,7 +313,8 @@ bool isgreen(int r,int g,int b)
 {
     int h=hue(r,g,b);
     double s=sat(r,g,b);
-    return 75<=h && h<=170 && s>=0.5;
+    int v=max(r,max(g,b));
+    return 75<=h && h<=170 && s>=0.5 && v >= 70;
 }
 
 bool isgreen_ball(int r,int g,int b,double avb)
@@ -382,7 +383,7 @@ bool isbrown(int r,int g,int b)
     double s=sat(r,g,b);
     int v=max(r,max(g,b));
 
-    return (25 <= h && h <= 60) && v>=50 && v<=140 && s >=0.3;
+    return (25 <= h && h <= 60) && v>=50 && v<=160 && s >=0.3;
 }
 
 
@@ -738,7 +739,7 @@ void work(_rgb)
     for (auto &s:down_side)
     {
         int rho=s.second;
-        int eps=4;
+        int eps=8;
 
         if (rho<=abs(eps))
             continue;
@@ -1174,7 +1175,7 @@ void display_table()
 
         double Y=T.realY(y,x,table_width,table_height);
         double X=T.realX(y,x,table_width);
-        
+
         if (X<=4*R || X+4*R >= table_width)
         {
             c.r=0;
@@ -1185,7 +1186,7 @@ void display_table()
             c.r=0;
             continue;
         }
-        
+
         glVertex2i(X,Y);
         for (int i=0;i<=p;i++){
             double ang=i*2*pi/p;
