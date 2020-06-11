@@ -741,11 +741,12 @@ void work(_rgb)
         int rho=s.second;
         int eps=8;
 
-        if (rho<=abs(eps))
-            continue;
-
         int cnt=0,gcnt=0,rcnt=0;
         int dy=height/2;
+        
+        if (dy+rho+abs(eps)>=height)
+            continue;
+        
         for (int x=width/3; x<2*width/3; x++)
         {
             if (isgreen(Rsrc[dy+rho-eps][x],Gsrc[dy+rho-eps][x],Bsrc[dy+rho-eps][x]))
