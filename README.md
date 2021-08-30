@@ -14,8 +14,9 @@
 ## апд 2021
 
 Решил проверить инструмент на играх, сыгранных в 2021. Результаты удручающие:
-![2021-1](https://user-images.githubusercontent.com/29729850/131271771-d22faadd-bdf1-4e27-bdd6-60e35ed11c49.png)
-![2021-2](https://user-images.githubusercontent.com/29729850/131271774-6bdbc3ce-8591-4353-af44-e4949bbc2dee.png)
-![2021-3](https://user-images.githubusercontent.com/29729850/131271778-a444b09a-727f-4123-ab9f-cec80a1de734.png)
-![2021-4](https://user-images.githubusercontent.com/29729850/131271785-c2cd68c3-2c65-48a5-8ae5-f213ec30c847.png)
-![2021-5](https://user-images.githubusercontent.com/29729850/131271789-249994bf-56b3-4a4e-968c-d04e44db1b1d.png)
+![Снимок экрана от 2021-08-30 03-38-25](https://user-images.githubusercontent.com/29729850/131271831-4858a53f-1ec2-410d-b17d-ea27bfb3a161.png)
+![Снимок экрана от 2021-08-30 03-41-05](https://user-images.githubusercontent.com/29729850/131271833-bd525c5a-701d-4b36-ba01-03852a73ceab.png)
+![Снимок экрана от 2021-08-30 03-54-50](https://user-images.githubusercontent.com/29729850/131271835-cc9d0028-b818-4700-bff7-422a2d048712.png)
+![Снимок экрана от 2021-08-30 03-55-22](https://user-images.githubusercontent.com/29729850/131271836-83812b2a-5c15-48b8-a82f-9aa8e6ab1a6d.png)
+![Снимок экрана от 2021-08-30 03-58-32](https://user-images.githubusercontent.com/29729850/131271837-7fa22fdb-1583-4fc7-828d-547cfd3cf7bb.png)
+
