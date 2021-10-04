@@ -321,7 +321,7 @@ bool isgreen_ball(int r,int g,int b,double avb)
 {
     int h=hue(r,g,b);
     double s=sat(r,g,b);
-    return 130<=h && h<=180 && s>=0.65 && b > 2+avb && b>=32;
+    return 120<=h && h<=180 && s>=0.40 && b > 2+avb && b>=32;
 }
 
 bool isyellow(int r,int g,int b)
